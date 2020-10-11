@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Inscription/connexion</title>
+
+        <link rel="stylesheet" href="css/header.css"/>
+        <link rel="stylesheet" href="css/inscription-connexion.css"/>
+		<link rel="stylesheet" href="css/footer.css">
+		
+		<script src="https://kit.fontawesome.com/e6d58530a8.js" crossorigin="chloe-romy"></script>
+		<base target="_parent">
+
+    </head>
+    
+    <header>
+        <div id="header">
+            <iframe id="header" src="header.html" seamless scrolling="no"></iframe>
+        </div> 
+    </header>
+
+	<body>
+
+        <div class="inscription-connexion">
+            <button name="button" class="nav-button" type="button" formnovalidate onclick="return showInscription();">Inscription</button>
+            <button name="button" class="nav-button" type="button" formnovalidate onclick="return showConnexion();">Connexion</button>
+        </div>
+
+        <div class="inscription" id="inscription">
+            <form>
+                <h1>Inscription</h1>
+                <!--rajouter ces données dans des fiches utilisateurs + base de données pour email/mot de passe-->
+                <p><label for = "prenom">Prenom : </label><input type = "text" name = "prenom" id = "prenom"/></p>
+                <p><label for = "nom">Nom : </label><input type = "text" name = "nom" id = "nom"/></p>
+                <p><label for = "anniversaire">Date de naissance :</label><input type="date" name="anniversaire" id="anniversaire"></p> <!--comparer avec date du jour pour +18-->
+                <p><label for = "email">Adresse mail :</label><input type="email" name="email" id="email"></p>
+                <p><label for = "email_confirmation">Confirmation de l'adresse mail :</label><input type="email" name="email_confirmation" id="email_confirmation"></p> <!--comparer email et email_confirmation-->
+                <p><label for = "password">Mot de passe : </label><input type = "password" name = "password" id = "password"/></p>
+                <p><label for = "password_confirmation">Confirmation du mot de passe : </label><input type = "password" name = "password_confirmation" id = "password_confirmation"/></p> <!--comparer password et password_confirmation-->    
+            </form>
+        </div>
+
+        <div class="connexion" id="connexion">
+            <form>
+                <h1>Connexion</h1>
+                <p><label for = "email">Adresse mail :</label><input type="email" name="email" id="email"></p>
+                <p><label for = "password">Mot de passe : </label><input type = "password" name = "password" id = "password"/></p>
+                <!--checker dans la base de donnée et accorder l'accès "utilisateur" ou "organisateur" en fonction, on bien refuser l'accès si non trouvé-->
+            </form>
+        </div>
+
+    </body>
+    
+    <footer>
+        <div id="footer">
+            <iframe id="footer_iframe" src="footer.html" seamless scrolling="no"></iframe>
+        </div>  
+    </footer>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</html>

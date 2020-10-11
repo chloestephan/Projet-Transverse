@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
 
 <head>
+    <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/index.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
+    
+    <script src="https://kit.fontawesome.com/e6d58530a8.js" crossorigin="chloe-romy"></script>
 	<title>Aidons nos lucioles !</title>
 </head>
 
@@ -17,19 +20,37 @@
 <body>
 
     <main>
-        <div>
-            <p>Inscription</p>
-            <p>Connexion</p>
+        <div class="inscription-connexion">
+            <a href="inscription-connexion.html" class="btn">Inscription/Connexion</a>
+            <hr>
         </div>
 
-        <div>
-            <p>presentation du projet</p>
-            <p>relancer vers le site initial</p>
+        <div class="presentation">
+            <div class="projet-efrei">
+                <h1>Notre projet entre lucioles</h1>
+                <p>Nous sommes 4 étudiants en L3 section internationale à EFREI Paris. Dans le cadre de notre formation, nous devons effectuer un projet qui a pour thème : "le numérique au service de la société".
+                    Nous nous sommes donc tournés vers "La balade des Lucioles" pour leur proposer notre aide afin de porter à bien ce projet. C'est avec grande gentillesse qu'ils ont accepté de mettre en place ce projet au sein de leur association. 
+                    Ainsi, ce site est le fruit de notre travail ensemble, entre lucioles, afin que cette plateforme puisse aider à organiser les différentes maraudes.
+                </p>
+            </div>
+
+            <div class="projet-asso">
+                <p>Pour plus d'informations sur La Balade des Lucioles, nous vous invitons à consulter leurs différents réseaux sociaux ainsi que leur site.</p>
+                <a href="https://www.facebook.com/baladedeslucioles" target=_blank><i class="fa fa-facebook"></i></a>
+				<a href="https://labaladedeslucioles.org/" target=_blank><i class="fa fa-linkedin"></i></a>
+				<a href="https://twitter.com/baladelucioles" target=_blank><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/labaladedeslucioles/" target=_blank><i class="fa fa-instagram"></i></a>
+            </div>
         </div>
 
-        <div>
-            <p>Contacter l'assocation</p>
-            <p>Contacter les codeurs du site (si bug)</p>
+        <div class="contact">
+            <div class="contact-asso">
+                <h1>Contacter la Balade des Lucioles</h1>
+            </div>
+            <div class="contact-nous">
+                <h1>Nous contacter</h1>
+            </div>
+            
         </div>
 
     </main>
@@ -38,7 +59,7 @@
 
 <footer>
     <div id="footer">
-        <iframe id="footer" src="footer.html" seamless scrolling="no"></iframe>
+        <iframe id="footer_iframe" src="footer.html" seamless scrolling="no"></iframe>
     </div>  
 </footer>
 

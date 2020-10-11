@@ -1,0 +1,101 @@
+/* ------ for the footer to take the whole iframe ------ */
+body {
+	margin: 0;
+}
+
+/* ------ frame that gets the footer in the other pages ------ */
+iframe {
+	max-width: 100%;
+}
+  
+iframe[seamless] {
+	border: none;
+	width: 100%;
+	margin-bottom: -4px;  /* make the footer fully stick at the bottom and thus get rid of the small space */
+}
+
+/* ------ HEADER AT THE TOPE OF EVERYPAGE ------*/
+.header{
+	position: none;
+	padding: 20px 40px;
+	box-sizing:border-box;
+	box-shadow: 0 0 7px 0 hsla(0, 0%, 0%, 0.15);
+	height: 80px;
+	background: #ffffff;
+	box-shadow: 0 4px 2px -2px gray;
+}
+
+.header .header-container {
+	max-width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* ------ LOGO ON THE LEFT-HAND SIDE OF THE HEADER ------ */
+.header .header-container h1{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+/* ------ LINKS ON THE RIGHT-HAND SIDE OF THE HEADER ------ */
+.header .header-container a {
+	color: black;
+	text-decoration: none;
+	font-family: consolas;
+}
+
+.header .header-container nav {
+	font : 18px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+	text-shadow: 1px 1px 1px lightgrey;
+	text-transform: uppercase;
+}
+
+.header .header-container nav a {
+	display: inline-block;
+	padding: 0 5px;
+	text-decoration:none;
+	color: black;
+	line-height:1;
+}
+
+.header .header-container nav a.selected {
+	background-color: white;
+	color: #f403d1;
+	border-radius: 3px;
+	padding:6px 10px;
+}
+
+.header .header-container nav a:hover {
+	transform: scale(1.1);
+}
+
+/* ------ MEDIA QUERIES ------ */
+@media all and (max-width: 600px) {
+	.header .header-container h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header .header-container nav {
+		line-height: 2;
+		float:none;
+	}
+
+	.header .header-container nav a {
+		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.header {
+		padding: 40px;
+		height: 170px;
+	}
+}
